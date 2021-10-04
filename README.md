@@ -15,7 +15,32 @@ time every fixed amount of time (parameterized).
 
 
 # Code structure
-## Pseudo Code
+### General Specifications
+- Module file prefixed with _tb
+- Timeframe 1ns/1ps
+- Invoke command by: tbgen [-rand] input_filename
+- Dumping changes in .vcd file
+
+
+#### Parameters
+- Clk, rst
+- Clock period
+- Reset assertion duration
+- Termination time
+- I/O
+
+
+
+### Pseudo Code
+- If (sequential) “clk/rst” ? Generate clock 
+- Connect input ports to reg variables
+- Connect output ports to wires
+- Assign register values = 0
+- [optional] assign random values to input registers
+- 1 register per time interval
+- Add “$monitor()” to output the signal changes
+- Dump testbench to stdout
+
 
 
 # Problems
