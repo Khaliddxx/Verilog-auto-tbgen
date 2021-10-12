@@ -1,27 +1,17 @@
 module adder_implicit (
-result        , 
-carry         , 
-r1            , 
-r2            , 
+result, 
+carry, 
+r1, 
+r2, 
 ci              
 );
 
-input    [3:0]   r1         ;
-input    [3:0]   r2         ;
-input            ci         ;
+input[3:0] r1;
+input[3:0] r2;
+input ci;
 
-output   [3:0]  result      ;
-output          carry       ;
-
-wire     [3:0]    r1        ;
-wire     [3:0]    r2        ;
-wire              ci        ;
-wire     [3:0]    result    ;
-wire              carry     ;
-
-wire              c1        ;
-wire              c2        ;
-wire              c3        ;
+output[3:0] result;
+output carry;
 
 addbit u0 (
 r1[0]           ,
