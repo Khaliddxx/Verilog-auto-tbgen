@@ -24,6 +24,8 @@ for m in vlog_mods:
             print('\t{:8}{};'.format("reg", p.name))
         else:
             print('\t{:8}{};'.format("wire", p.name))
+
+    print('Module {}'.format(m.name), '(',     ');')
     print('\ninitial begin')
     print('\t$dumpfile(testbench.vcd);')
 
