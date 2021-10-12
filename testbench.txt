@@ -1,1 +1,1 @@
-Module "newstyle":	reg                 z2      output
+Module "addbit":	reg                 cout    output
