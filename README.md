@@ -11,7 +11,7 @@ time every fixed amount of time (parameterized).
 
 
 # Dependencies
-// Parser 'when decided'
+HDL Parser https://kevinpt.github.io/hdlparse/
 
 
 # Code structure
